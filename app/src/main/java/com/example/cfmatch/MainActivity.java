@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void submit(View c) {
-        Intent i = new Intent(getBaseContext(), login.class);
+        Intent i = new Intent(getBaseContext(), register.class);
 
         startActivity(i);
     }
