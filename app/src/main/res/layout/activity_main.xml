@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary_gray"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="55dp"
         android:text="CFMatch"
         android:textAlignment="center"
-        android:textColor="@color/secondary_blue"
+        android:textColor="@color/primary_blue"
         android:textSize="48sp"
         app:flow_horizontalAlign="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,8 +27,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
+        android:backgroundTint="@color/secondary_blue"
         android:onClick="register"
         android:text="register"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/home"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/home"
@@ -39,11 +42,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginTop="76dp"
+        android:backgroundTint="@color/secondary_blue"
+        android:backgroundTintMode="add"
         android:onClick="login"
+        android:shadowColor="#E60C0C"
         android:text="Login"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/home"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/buttonRegister"
-        app:layout_constraintTop_toBottomOf="@+id/home" />
+        app:layout_constraintTop_toBottomOf="@+id/home"
+        app:rippleColor="@color/secondary_blue" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
