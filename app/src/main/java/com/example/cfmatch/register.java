@@ -6,8 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.cfmatch.dao.UserDao;
+import com.example.cfmatch.entities.User;
+
 public class register extends AppCompatActivity {
     private EditText name, email, password, description;
+    private UserDao userDao;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +23,7 @@ public class register extends AppCompatActivity {
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         description = findViewById(R.id.description);
+        userDao = new UserDao(this);
     }
 
     public void submit(View c) {
@@ -29,6 +35,11 @@ public class register extends AppCompatActivity {
         if(!validFieldsRequired()){
             return;
         }
+
+        User user = new User(valueEmail, valuePassword, valueName, valueDescription);
+        long id = userDao.insert(user);
+        System.out.println(id);
+
     }
 
     public boolean validFieldsRequired(){

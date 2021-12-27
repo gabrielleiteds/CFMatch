@@ -7,11 +7,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class Database extends SQLiteOpenHelper {
 
     private static final String name = "cf_match";
-    private static final int version = 1;
+    private static final int version = 17;
 
     private String createUserSQL = "create table user(id integer primary key autoincrement, " +
-            "name varchar(50)," +
-            "email varhar(50))";
+            "password varchar(50)," +
+            "email varchar(50)," +
+            "description text," +
+            "name varchar(50))";
 
     public Database (Context context) {
         super(context, name, null, version);
@@ -24,6 +26,7 @@ public class Database extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        db.execSQL("DROP TABLE IF EXISTS user");
+        onCreate(db);
     }
 }

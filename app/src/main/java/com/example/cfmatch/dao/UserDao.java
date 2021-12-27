@@ -13,15 +13,18 @@ public class UserDao {
     private Database connection;
     private SQLiteDatabase database;
 
-    UserDao (Context context) {
+    public UserDao(Context context) {
         connection = new Database(context);
         database = connection.getWritableDatabase();
     }
 
-    public long insert (@NonNull User user) {
+    public long insert (User user) {
         ContentValues values = new ContentValues();
         values.put("email", user.email);
         values.put("password", user.password);
+        values.put("description", user.description);
+        values.put("name", user.name);
+
         return database.insert("user", null, values);
     }
 }
