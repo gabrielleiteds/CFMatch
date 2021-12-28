@@ -2,6 +2,7 @@ package com.example.cfmatch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -39,6 +40,10 @@ public class register extends AppCompatActivity {
         User user = new User(valueEmail, valuePassword, valueName, valueDescription);
         long id = userDao.insert(user);
         System.out.println(id);
+
+        Intent i = new Intent(getBaseContext(), AddInterest.class);
+
+        startActivity(i);
 
     }
 
