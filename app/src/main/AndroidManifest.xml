@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CFMatch">
         <activity
+            android:name=".AddInterest"
+            android:exported="false" />
+        <activity
             android:name=".login"
             android:exported="false" />
         <activity
