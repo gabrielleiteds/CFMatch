@@ -45,11 +45,6 @@ public class login extends AppCompatActivity {
 
         User loggedUser = getUserByEmailAndPassword(users, valueEmail, valuePassword);
 
-        if (loggedUser != null) {
-            System.out.println(loggedUser.email);
-            System.out.println(loggedUser.password);
-        }
-
         if(!validFieldsRequired()){
             return;
         }
