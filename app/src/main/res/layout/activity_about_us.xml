@@ -4,6 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/primary_blue"
     tools:context=".AboutUs">
 
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/secondary_blue"
+            android:text="Sobre nós"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="659dp"
+            android:text="Inicialmente, fundar uma startup (empresas altamente escaláveis) envolve diversas tarefas para alavancá-la e gerar uma receita que seja superior aos gastos iniciais. As habilidades requeridas para gerir um negócio e escalá-lo são muitas, desde a idealização e validação da ideia de negócio, até o desenvolvimento, marketing e controle das finanças. Em grande parte dos casos, uma única pessoa não é capaz de gerir todas essas áreas que concernem a uma companhia.   Pensando nisso, visamos a criação de um aplicativo que tem como objetivo conectar pessoas que tenham interesses em comum e habilidades complementares, e que desejem fundar a sua própria empresa juntamente um do outro, buscando fazer uma melhor divisão de tarefas e obter um maior crescimento em menor tempo. "
+            android:lineSpacingExtra="20px"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

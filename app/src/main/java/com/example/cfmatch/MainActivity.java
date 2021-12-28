@@ -14,6 +14,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void aboutUs (View c) {
+        Intent i = new Intent(getBaseContext(), AboutUs.class);
+        startActivity(i);
+    }
+
     public void register(View c) {
         Intent i = new Intent(getBaseContext(), register.class);
 
