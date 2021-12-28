@@ -8,12 +8,13 @@
     tools:context=".AboutUs">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="350dp"
+        android:layout_height="585dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -31,11 +32,20 @@
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="659dp"
-            android:text="Inicialmente, fundar uma startup (empresas altamente escaláveis) envolve diversas tarefas para alavancá-la e gerar uma receita que seja superior aos gastos iniciais. As habilidades requeridas para gerir um negócio e escalá-lo são muitas, desde a idealização e validação da ideia de negócio, até o desenvolvimento, marketing e controle das finanças. Em grande parte dos casos, uma única pessoa não é capaz de gerir todas essas áreas que concernem a uma companhia.   Pensando nisso, visamos a criação de um aplicativo que tem como objetivo conectar pessoas que tenham interesses em comum e habilidades complementares, e que desejem fundar a sua própria empresa juntamente um do outro, buscando fazer uma melhor divisão de tarefas e obter um maior crescimento em menor tempo. "
+            android:layout_height="wrap_content"
             android:lineSpacingExtra="20px"
-            android:textAlignment="center"
-            />
+            android:text="Inicialmente, fundar uma startup (empresas altamente escaláveis) envolve diversas tarefas para alavancá-la e gerar uma receita que seja superior aos gastos iniciais. As habilidades requeridas para gerir um negócio e escalá-lo são muitas, desde a idealização e validação da ideia de negócio, até o desenvolvimento, marketing e controle das finanças. Em grande parte dos casos, uma única pessoa não é capaz de gerir todas essas áreas que concernem a uma companhia.   Pensando nisso, visamos a criação de um aplicativo que tem como objetivo conectar pessoas que tenham interesses em comum e habilidades complementares, e que desejem fundar a sua própria empresa juntamente um do outro, buscando fazer uma melhor divisão de tarefas e obter um maior crescimento em menor tempo. "
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="48dp"
+            android:text="Autores: Eduardo Dias, Enzo Garcia, Gabriel Leite e Lucas Primon. "
+            android:textAlignment="textEnd"
+            android:textSize="10sp" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
