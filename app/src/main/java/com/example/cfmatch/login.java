@@ -3,6 +3,7 @@ package com.example.cfmatch;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -58,6 +59,9 @@ public class login extends AppCompatActivity {
             return;
         }
 
+        Intent i = new Intent(getBaseContext(), UserProfile.class);
+        i.putExtra("userId", (int) loggedUser.id);
+        startActivity(i);
     }
 
     public boolean validFieldsRequired(){
