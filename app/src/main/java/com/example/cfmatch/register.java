@@ -38,10 +38,12 @@ public class register extends AppCompatActivity {
         }
 
         User user = new User(valueEmail, valuePassword, valueName, valueDescription);
-        long id = userDao.insert(user);
-        user.id = id;
+        int id = (int) userDao.insert(user);
+        System.out.println(id);
 
         Intent i = new Intent(getBaseContext(), AddInterest.class);
+
+        i.putExtra("userId", id);
 
         startActivity(i);
 
