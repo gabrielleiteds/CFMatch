@@ -24,24 +24,9 @@
         app:layout_constraintVertical_bias="0.226" />
 
     <Button
-        android:id="@+id/buttonRegister"
-        android:layout_width="291dp"
-        android:layout_height="38dp"
-        android:backgroundTint="@color/secondary_blue"
-        android:onClick="register"
-        android:text="register"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
-        app:layout_constraintEnd_toEndOf="@+id/home"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/home"
-        app:layout_constraintTop_toBottomOf="@+id/home"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="291dp"
-        android:layout_height="38dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="392dp"
         android:backgroundTint="@color/secondary_blue"
         android:backgroundTintMode="add"
@@ -54,6 +39,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/buttonRegister"
         app:rippleColor="@color/secondary_blue" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/secondary_blue"
+        android:onClick="register"
+        android:text="Registro"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="@+id/home"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/home"
+        app:layout_constraintTop_toBottomOf="@+id/home"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button2"
