@@ -8,7 +8,7 @@ import java.util.List;
 
 public class User implements Serializable {
 
-    public int id;
+    public long id;
     public String name;
     public String email;
     public String password;
@@ -16,9 +16,7 @@ public class User implements Serializable {
     private UserDao userDao;
     public ArrayList<String> interests;
 
-    public User () {
-
-    }
+    public User () {}
 
     public User (String email, String password, String name, String description) {
         this.email = email;
