@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/DevBolado/development/CFMatch/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/eduar/AndroidStudioProjects/CFMatch/app/src/main/res/layout/activity_about_us.xml" value="0.25" />
+        <entry key="..\:/Users/eduar/AndroidStudioProjects/CFMatch/app/src/main/res/layout/activity_about_us.xml" value="0.4" />
         <entry key="..\:/Users/eduar/AndroidStudioProjects/CFMatch/app/src/main/res/layout/activity_interest.xml" value="0.25" />
         <entry key="..\:/Users/eduar/AndroidStudioProjects/CFMatch/app/src/main/res/layout/activity_login.xml" value="0.4" />
         <entry key="..\:/Users/eduar/AndroidStudioProjects/CFMatch/app/src/main/res/layout/activity_main.xml" value="0.264" />
@@ -19,5 +19,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.4" />
+      </ProjectState>
+    </option>
   </component>
 </project>
