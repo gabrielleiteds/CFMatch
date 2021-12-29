@@ -16,6 +16,7 @@ import com.example.cfmatch.entities.User;
 import com.example.cfmatch.entities.UserInterest;
 
 import java.util.List;
+import java.util.Locale;
 
 public class AddInterest extends AppCompatActivity {
 
@@ -61,13 +62,16 @@ public class AddInterest extends AppCompatActivity {
         int interestId = 0;
 
         for(Interest a : interests) {
-            if(a.title.equals(title)) {
+            if(a.title.equalsIgnoreCase(info)) {
                 verify = true;
                 interestId = (int) a.id;
             }
         }
         // se não achar um com o title igual add o novo interesse
-        if(!verify) interestId = (int) interestDao.insert(interest);
+        if(!verify) {
+            System.out.println("Adicionou!!!!!!!!!!!!!!!!!!!");
+            interestId = (int) interestDao.insert(interest);
+        }
 
         User user = new User();
         user.addInterests(interest, userId);
