@@ -16,7 +16,6 @@ import com.example.cfmatch.entities.User;
 import com.example.cfmatch.entities.UserInterest;
 
 import java.util.List;
-import java.util.Locale;
 
 public class AddInterest extends AppCompatActivity {
 
@@ -33,7 +32,7 @@ public class AddInterest extends AppCompatActivity {
         setContentView(R.layout.activity_interest);
 
         recyclerView = findViewById(R.id.myRecycler);
-        title = findViewById(R.id.title);
+        title = findViewById(R.id.username);
         Intent i = getIntent();
         userId = i.getIntExtra("userId", 0);
 
