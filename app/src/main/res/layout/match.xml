@@ -11,7 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
+        android:fontFamily="@font/roboto_light"
         android:text="Nome"
+        android:textAllCaps="false"
         android:textColor="#000"
         android:textSize="22dp"
         android:textStyle="bold" />
@@ -19,9 +21,11 @@
     <TextView
         android:id="@+id/descriptionTv"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/usernameTv"
         android:layout_marginLeft="10dp"
+        android:fontFamily="@font/roboto"
+        android:maxHeight="100dp"
         android:text="Descrição" />
 
 </RelativeLayout>

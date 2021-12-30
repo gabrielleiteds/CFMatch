@@ -3,7 +3,7 @@
     <style name="Theme.CFMatch" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primary_green</item>
-        <item name="colorPrimaryVariant">@color/primary_green</item>
+        <item name="colorPrimaryVariant">@color/secundary_green</item>
         <item name="colorOnPrimary">@color/white</item>
 
         <!-- Secondary brand color. -->

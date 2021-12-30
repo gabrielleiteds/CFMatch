@@ -7,10 +7,21 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ListView
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:height="70sp"
+        android:fontFamily="@font/roboto_light"
+        android:paddingLeft="35px"
+        android:paddingTop="35px"
+        android:text="Usuários que bla bla bla:"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <ListView
         android:id="@+id/listView"
-    ></ListView>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
 
 </LinearLayout>
