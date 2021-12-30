@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primary_gray">
+    android:background="@color/white">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/myRecycler"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/secondary_blue"
+        android:backgroundTint="@color/primary_green"
         android:onClick="onClickNoAdd"
         android:text="Adicionar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:backgroundTint="@color/secondary_blue"
+        android:backgroundTint="@color/primary_green"
         android:onClick="profile"
         android:text="Ir para o perfil"
         app:layout_constraintBottom_toBottomOf="parent"

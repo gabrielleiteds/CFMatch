@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/primary_blue"
+    android:backgroundTint="@color/white"
     tools:context=".AboutUs">
 
     <TextView
@@ -35,9 +35,10 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_gravity="center"
-            android:backgroundTint="@color/secondary_blue"
-            android:text="Sobre nós"
+            android:backgroundTint="@color/primary_green"
+            android:text="Sobre o CFMatch"
             android:textAlignment="center"
+            android:textColor="@color/primary_green"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -47,7 +48,8 @@
             android:layout_height="wrap_content"
             android:lineSpacingExtra="20px"
             android:text="Inicialmente, fundar uma startup (empresas altamente escaláveis) envolve diversas tarefas para alavancá-la e gerar uma receita que seja superior aos gastos iniciais. As habilidades requeridas para gerir um negócio e escalá-lo são muitas, desde a idealização e validação da ideia de negócio, até o desenvolvimento, marketing e controle das finanças. Em grande parte dos casos, uma única pessoa não é capaz de gerir todas essas áreas que concernem a uma companhia.   Pensando nisso, visamos a criação de um aplicativo que tem como objetivo conectar pessoas que tenham interesses em comum e habilidades complementares, e que desejem fundar a sua própria empresa juntamente um do outro, buscando fazer uma melhor divisão de tarefas e obter um maior crescimento em menor tempo. "
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView3"
@@ -56,6 +58,7 @@
             android:layout_marginTop="48dp"
             android:text="Autores: Eduardo Dias, Enzo Garcia, Gabriel Leite e Lucas Primon. "
             android:textAlignment="textEnd"
+            android:textColor="@color/secundary_green"
             android:textSize="10sp" />
 
     </LinearLayout>
