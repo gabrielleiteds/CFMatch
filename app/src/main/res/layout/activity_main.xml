@@ -28,7 +28,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginBottom="392dp"
-        android:backgroundTint="@color/third_green"
+        android:backgroundTint="@color/secundary_green"
         android:backgroundTintMode="add"
         android:onClick="login"
         android:shadowColor="#E60C0C"
@@ -38,15 +38,15 @@
         app:layout_constraintEnd_toEndOf="@+id/buttonRegister"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/buttonRegister"
-        app:rippleColor="@color/secondary_blue" />
+        app:rippleColor="@color/secundary_green" />
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:backgroundTint="@color/third_green"
+        android:backgroundTint="@color/secundary_green"
         android:onClick="register"
-        android:text="Cadastrar-se"
+        android:text="Registro"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
         app:layout_constraintEnd_toEndOf="@+id/home"
@@ -62,7 +62,7 @@
         android:backgroundTint="#00000000"
         android:onClick="aboutUs"
         android:text="Sobre nós"
-        android:textColor="@color/green"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"

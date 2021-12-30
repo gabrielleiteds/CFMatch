@@ -32,7 +32,7 @@ public class AddInterest extends AppCompatActivity {
         setContentView(R.layout.activity_interest);
 
         recyclerView = findViewById(R.id.myRecycler);
-        title = findViewById(R.id.username);
+        title = findViewById(R.id.title);
         Intent i = getIntent();
         userId = i.getIntExtra("userId", 0);
 
