@@ -59,8 +59,6 @@ public class login extends AppCompatActivity {
             return;
         }
 
-//        Intent i = new Intent(getBaseContext(), UserProfile.class);
-//        i.putExtra("userId", (int) loggedUser.id);
 
         Intent i = new Intent(getBaseContext(), Matches.class);
         i.putExtra("userId", (int) loggedUser.id);

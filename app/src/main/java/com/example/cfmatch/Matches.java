@@ -3,6 +3,7 @@ package com.example.cfmatch;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,11 +25,16 @@ public class Matches extends AppCompatActivity {
 
     ArrayList<User> matchesData;
     CustomAdapter customAdapter;
+    private int userId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_matches);
+
+        Intent i = getIntent();
+
+        userId = i.getIntExtra("userId", 0);
 
         ListView listView = (ListView) findViewById(R.id.listView);
 
@@ -42,5 +48,10 @@ public class Matches extends AppCompatActivity {
         return new UserDao(this).getAll();
     }
 
+    public void profile(View c) {
+        Intent i = new Intent(getBaseContext(), UserProfile.class);
+        i.putExtra("userId", userId);
+        startActivity(i);
+    }
 }
 
