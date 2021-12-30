@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class Database extends SQLiteOpenHelper {
 
     private static final String name = "cf_match";
-    private static final int version = 24;
+    private static final int version = 25;
 
     private String createUserSQL = "create table user(id integer primary key autoincrement, " +
             "password varchar(50)," +

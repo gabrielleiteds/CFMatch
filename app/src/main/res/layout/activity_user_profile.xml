@@ -7,76 +7,77 @@
     android:background="@color/white"
     tools:context=".UserProfile">
 
-    <TextView
+    <EditText
         android:id="@+id/email"
         android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:text="user@user.com"
-        android:textAlignment="viewStart"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/name"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username"
-        app:layout_constraintVertical_bias="0.001" />
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:enabled="false"/>
 
-    <TextView
-        android:id="@+id/username"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:text="username"
-        android:textAlignment="viewStart"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="204dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059" />
+        android:enabled="false"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/description"
-        android:layout_width="0dp"
-        android:layout_height="73dp"
-        android:text="Descrição do Usuario logado"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="305dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="12dp"
+        android:hint="Descrição"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/email"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/username"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        app:layout_constraintVertical_bias="0.127" />
+        app:layout_constraintStart_toStartOf="@+id/email"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Meu perfil"
+        android:textColor="@color/primary_green"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        android:enabled="false"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="212dp"
-        android:layout_height="58dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
         android:backgroundTint="@color/secundary_green"
         android:onClick="updateUser"
         android:text="Editar Perfil"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.88"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description"
-        app:layout_constraintVertical_bias="0.255" />
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/username"
-        tools:layout_editor_absoluteX="16dp" />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintVertical_bias="0.895" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,7 +29,7 @@ public class UserProfile extends AppCompatActivity {
         Intent i = getIntent();
         userId = i.getIntExtra("userId", 0);
 
-        username = findViewById(R.id.username);
+        username = findViewById(R.id.name);
         email = findViewById(R.id.email);
         description = findViewById(R.id.description);
 

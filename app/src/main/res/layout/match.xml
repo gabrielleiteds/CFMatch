@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp"
-    android:background="#f7f7f7">
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:padding="10dp">
 
     <TextView
         android:id="@+id/usernameTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:fontFamily="@font/roboto_light"
+        android:fontFamily="@font/roboto"
         android:text="Nome"
+        android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textColor="#000"
         android:textSize="22dp"
@@ -24,8 +25,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/usernameTv"
         android:layout_marginLeft="10dp"
-        android:fontFamily="@font/roboto"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/roboto_slab"
         android:maxHeight="100dp"
-        android:text="Descrição" />
+        android:maxLines="6"
+        android:scrollHorizontally="false"
+        android:text="Descrição"
+        android:textAllCaps="false"
+        android:textColor="#E6303230" />
 
 </RelativeLayout>

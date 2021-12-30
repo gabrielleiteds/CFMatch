@@ -38,7 +38,6 @@ public class login extends AppCompatActivity {
     }
 
     public void submit(View c) {
-        System.out.println("Login submit");
         String valueEmail = email.getText().toString();
         String valuePassword = password.getText().toString();
 
@@ -58,9 +57,6 @@ public class login extends AppCompatActivity {
             toast.show();
             return;
         }
-
-//        Intent i = new Intent(getBaseContext(), UserProfile.class);
-//        i.putExtra("userId", (int) loggedUser.id);
 
         Intent i = new Intent(getBaseContext(), Matches.class);
         i.putExtra("userId", (int) loggedUser.id);
