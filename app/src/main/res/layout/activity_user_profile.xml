@@ -54,6 +54,7 @@
         android:layout_width="212dp"
         android:layout_height="58dp"
         android:backgroundTint="@color/secondary_blue"
+        android:onClick="updateUser"
         android:text="Editar Perfil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

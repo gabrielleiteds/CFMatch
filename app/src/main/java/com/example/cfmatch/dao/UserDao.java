@@ -32,6 +32,16 @@ public class UserDao {
         return database.insert("user", null, values);
     }
 
+    public void update (User user, String userId) {
+        ContentValues values = new ContentValues();
+        values.put("email", user.email);
+        values.put("password", user.password);
+        values.put("description", user.description);
+        values.put("name", user.name);
+
+        database.update("user", values, "id = ?", new String[]{userId});
+    }
+
     public List<User> getAll () {
         List<User> users = new ArrayList<>();
         Cursor cursor = database.query("user",
