@@ -59,10 +59,5 @@ public class Matches extends AppCompatActivity {
         return new UserDao(this).getAll();
     }
 
-    public void profile(View c) {
-        Intent i = new Intent(getBaseContext(), UserProfile.class);
-        i.putExtra("userId", userId);
-        startActivity(i);
-    }
 }
 

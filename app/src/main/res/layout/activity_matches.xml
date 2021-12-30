@@ -20,13 +20,6 @@
         android:onClick="submit"
         android:textColorLink="@color/third_green" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:onClick="profile"
-        android:text="Ir para o Perfil" />
-
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
