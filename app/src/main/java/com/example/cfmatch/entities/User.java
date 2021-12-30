@@ -24,23 +24,4 @@ public class User implements Serializable {
         this.name = name;
         this.description = description;
     }
-
-    public void addInterests(Interest interest, int userId) {
-        System.out.println(interest.title);
-        System.out.println(userId);
-        this.id = (int) userId;
-
-        /* for (User user: users) {
-            if ((int) userId == (int) user.id) {
-                user.interests.add(interest.title.toString());
-                System.out.println(interest);
-                System.out.println(user);
-                // userDao.update(user);
-            }
-        }
-
-         */
-    }
-
-
 }

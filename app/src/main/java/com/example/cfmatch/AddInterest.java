@@ -51,6 +51,12 @@ public class AddInterest extends AppCompatActivity {
         };
     }
 
+    public void profile(View c) {
+        Intent i = new Intent(getBaseContext(), UserProfile.class);
+        i.putExtra("userId", userId);
+        startActivity(i);
+    }
+
     public void onClickNoAdd(View v) {
         String info = title.getText().toString();
         Interest interest = new Interest();
@@ -71,10 +77,6 @@ public class AddInterest extends AppCompatActivity {
             System.out.println("Adicionou!!!!!!!!!!!!!!!!!!!");
             interestId = (int) interestDao.insert(interest);
         }
-
-        User user = new User();
-        user.addInterests(interest, userId);
-        user.id = userId;
 
         userInterest.interestId = (int) interestId;
         userInterest.userId = (int) userId;

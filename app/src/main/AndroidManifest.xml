@@ -13,6 +13,9 @@
             android:name=".Matches"
             android:exported="false" />
         <activity
+            android:name=".UserProfile"
+            android:exported="false" />
+        <activity
             android:name=".AboutUs"
             android:exported="false" />
         <activity
