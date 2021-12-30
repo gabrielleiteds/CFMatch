@@ -33,6 +33,8 @@ public class Matches extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_matches);
 
+        Intent i = getIntent();
+
         ListView listView = (ListView) findViewById(R.id.listView);
 
         matchesData = new ArrayList(getUserMatches());
@@ -57,5 +59,10 @@ public class Matches extends AppCompatActivity {
         return new UserDao(this).getAll();
     }
 
+    public void profile(View c) {
+        Intent i = new Intent(getBaseContext(), UserProfile.class);
+        i.putExtra("userId", userId);
+        startActivity(i);
+    }
 }
 
