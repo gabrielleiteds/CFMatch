@@ -35,12 +35,22 @@ public class Matches extends AppCompatActivity {
 
         Intent i = getIntent();
 
-        ListView listView = (ListView) findViewById(R.id.listView);
+        ListView listView = findViewById(R.id.listView);
+        listView.setClickable(true);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i = new Intent(getBaseContext(), AnotherUserProfile.class);
+                i.putExtra("userId", (int) id);
+                startActivity(i);
+            }
+        });
 
         matchesData = new ArrayList(getUserMatches());
         customAdapter = new CustomAdapter(this, matchesData);
 
-        goToProfile = (Button) findViewById(R.id.btn_go_to_profile);
+        goToProfile = findViewById(R.id.btn_go_to_profile);
 
         listView.setAdapter(customAdapter);
     }
@@ -48,7 +58,6 @@ public class Matches extends AppCompatActivity {
     public void submit (View c) {
         Intent i = getIntent();
         long userId = i.getIntExtra("userId", 0);
-
         i = new Intent(getBaseContext(), UserProfile.class);
         i.putExtra("userId", (int) userId);
         startActivity(i);

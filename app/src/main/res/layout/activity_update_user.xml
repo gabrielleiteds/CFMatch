@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/another_user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="136dp"
