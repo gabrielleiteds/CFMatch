@@ -74,7 +74,6 @@ public class AddInterest extends AppCompatActivity {
         }
         // se não achar um com o title igual add o novo interesse
         if(!verify) {
-            System.out.println("Adicionou!!!!!!!!!!!!!!!!!!!");
             interestId = (int) interestDao.insert(interest);
         }
 
