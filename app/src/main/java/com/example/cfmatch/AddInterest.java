@@ -51,8 +51,8 @@ public class AddInterest extends AppCompatActivity {
         };
     }
 
-    public void profile(View c) {
-        Intent i = new Intent(getBaseContext(), UserProfile.class);
+    public void finalizeRegister(View c) {
+        Intent i = new Intent(getBaseContext(), Matches.class);
         i.putExtra("userId", userId);
         startActivity(i);
     }

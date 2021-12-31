@@ -14,7 +14,7 @@
         android:layout_marginTop="52dp"
         android:backgroundTint="@color/primary_green"
         android:onClick="submit"
-        android:text="Finalizar Cadastro"
+        android:text="Proxima Pagina"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/description"
         app:layout_constraintHorizontal_bias="0.0"
