@@ -86,5 +86,6 @@ public class AddInterest extends AppCompatActivity {
 
         adapter.get().add(interest);
         adapter.notifyDataSetChanged();
+        title.setText("");
     }
 }

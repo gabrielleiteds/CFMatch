@@ -20,15 +20,15 @@
 
     <EditText
         android:id="@+id/title"
-        android:layout_width="249dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="229dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="Digite seus interesses"
         android:inputType="textPersonName"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,12 +37,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="@color/primary_green"
         android:onClick="onClickNoAdd"
         android:text="Adicionar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toEndOf="@+id/title"
         app:layout_constraintTop_toTopOf="parent" />
 
